@@ -6,9 +6,10 @@ The purpose of this documentation is to document common interview questions and 
 
 * [Q1: What is Shell?](#Q1.)
 * [Q2: What is a Shell Script? Can you name some of its advantages? ?](#Q2.)
-* [Q4: What are the different types of variables used in Shell Script?](#Q3.)
-* [Q5: What are the different types of variables used in Shell Script?](#Q4.)
-* [Q6: What are the different types of variables used in Shell Script?](#Q5.)
+* [Q3: What are the different types of variables used in Shell Script?](#Q3.)
+* [Q4: How do you create a shortcut in Linux?](#Q4.)
+* [Q5: What are the different types of variables used in Shell Script?](#Q5.)
+* [Q6: What are the different types of variables used in Shell Script?](#Q6.)
 * [Q7: What are the different types of variables used in Shell Script?](#Q7.)
 * [Q8: What are the different types of variables used in Shell Script?](#Q8.)
 * [Q9: What are the different types of variables used in Shell Script?](#Q9.)
@@ -48,9 +49,9 @@ The purpose of this documentation is to document common interview questions and 
 ### *Answer:*
 **This can be done with the help of links present in Linux OS.**
 
-+  **Hard Link: Hard links are linked to the inode of the file and have to be on the same file system as of the file. Deleting the original file does not affect the hard link.**
+  +  **Hard Link: Hard links are linked to the inode of the file and have to be on the same file system as of the file. Deleting the original file does not affect the hard link.**
 
-+  **Soft Link: Soft links are linked to the file name and can reside on a different file system as well. Deleting the original file makes the soft link inactive.**
+  +  **Soft Link: Soft links are linked to the file name and can reside on a different file system as well. Deleting the original file makes the soft link inactive.**
 
 ### Q11.
 
