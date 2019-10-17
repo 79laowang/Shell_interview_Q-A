@@ -4,10 +4,10 @@ The purpose of this documentation is to document common interview questions and 
 
 ## Q&A
 
-* [Q1: What is Shell?](#Q1.)
-* [Q2: What is a Shell Script? Can you name some of its advantages? ?](#Q2.)
-* [Q3: What are the different types of variables used in Shell Script?](#Q3.)
-* [Q4: How do you create a shortcut in Linux?](#Q4.)
+* [Q1: What is Shell?](#Q1)
+* [Q2: What is a Shell Script? Can you name some of its advantages? ?](#Q2)
+* [Q3: What are the different types of variables used in Shell Script?](#Q3)
+* [Q4: How do you create a shortcut in Linux?](#Q4)
 * [Q5: What are the different types of variables used in Shell Script?](#Q5.)
 * [Q6: What are the different types of variables used in Shell Script?](#Q6.)
 * [Q7: What are the different types of variables used in Shell Script?](#Q7.)
