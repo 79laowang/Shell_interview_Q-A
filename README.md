@@ -4,9 +4,15 @@ The purpose of this documentation is to document common interview questions and 
 ## Catalog
 * [Q1 ](#Q1)
 
-### Q1 
+### Q1
+This is from redhat online test.
+
 #### Question:
+```
 When debugging a Bash script, what command would you use to stop the execution of the program until the Enter key is pressed?
+```
 
 #### Answer:
+```
 read
+```
