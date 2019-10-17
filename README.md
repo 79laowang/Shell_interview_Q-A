@@ -16,6 +16,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q10: What are the different types of variables used in Shell Script?](#Q10)
 * [Q11: When debugging a Bash script, what command would you use to stop the execution of the program until the Enter key is pressed?](#Q11)
 ---
+
 ### Q1.
 **What is Shell?**
 
