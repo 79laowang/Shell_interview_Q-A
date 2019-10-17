@@ -23,7 +23,7 @@ The purpose of this documentation is to document common interview questions and 
 ### *Answer:*
 
 **The Shell is a Command Line Interpreter. It translates commands entered by the user and converts them into a language that is understood by the Kernel. The shell interprets a command typed in at the terminal, and calls the program that you want.**
-
+---
 ### Q2.
 
 **What is a Shell Script? Can you name some of its advantages?**
