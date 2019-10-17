@@ -27,9 +27,9 @@ The purpose of this documentation is to document common interview questions and 
 **A shell script is a command-containing text-file that contains commands in order of their execution. Typical operations performed by shell scripts include printing text, file manipulation, and program execution.**
 
    **Following are the two main advantages of shell scripting:**
-+    **It facilitates developing your own custom OS with relevant features which best suit your needs.**
++  **It facilitates developing your own custom OS with relevant features which best suit your needs.** 
 
-+    **It facilitates designing software applications according to their respective platforms.**
++  **It facilitates designing software applications according to their respective platforms.**
 
 ### Q4.
 
