@@ -16,6 +16,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q10: How to get the last line from a file using just the terminal?](#Q10)
 * [Q11: When debugging a Bash script, what command would you use to stop the execution of the program until the Enter key is pressed?](#Q11)
 * [Q12: How to get the first line from a file using just the terminal?](#Q12)
+* [Q13: How to get the first line from a file using just the terminal?](#Q13)
 
 ---
 
@@ -148,5 +149,26 @@ read
 ```Bash
 # head -1 /var/log/boot.log-20190716
 [  OK  ] Started Show Plymouth Boot Screen.
+```
+---
+
+### Q13.
+**How to get the 3rd element/column from each line from a file?**
+### *Answer:*
+```Bash
+# cat test.sh
+#!/usr/bin/env bash
+cat > test.txt <<EOF
+col11 col12 col13 col14 col15
+col21 col22 col23 col24 col25
+col31 col32 col33 col34 col35
+EOF
+
+awk '{print $3}' ${1}
+
+# ./test.sh test.txt
+col13
+col23
+col33
 ```
 ---
