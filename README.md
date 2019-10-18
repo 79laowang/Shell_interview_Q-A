@@ -12,9 +12,10 @@ The purpose of this documentation is to document common interview questions and 
 * [Q6: How to pass an argument to a script?](#Q6)
 * [Q7: How to calculate the number of passed arguments?](#Q7)
 * [Q8: How to get script name inside a script?](#Q8)
-* [Q9: What are the different types of variables used in Shell Script?](#Q9)
-* [Q10: What are the different types of variables used in Shell Script?](#Q10)
+* [Q9: How to check if the previous command was run successfully?](#Q9)
+* [Q10: How to get the last line from a file using just the terminal?](#Q10)
 * [Q11: When debugging a Bash script, what command would you use to stop the execution of the program until the Enter key is pressed?](#Q11)
+* [Q12: How to get the first line from a file using just the terminal?](#Q12)
 
 ---
 
@@ -106,10 +107,46 @@ Script Name:./test.sh
 ```
 ---
 
+### Q9.
+**How to get script name inside a script?**
+### *Answer:*
+```Bash
+# cat test.sh
+#!/usr/bin/env bash
+var=$?
+if var=0 ;then
+    echo "Script was Run successfully!"
+else
+    echo "Script was Run failed!"
+fi
+
+# ./test.sh
+Script was Run successfully!
+```
+---
+
+### Q10.
+**How to get the last line from a file using just the terminal?**
+### *Answer:*
+```Bash
+# tail -1 /var/log/messages
+Oct 18 03:42:46 ke-ol7vm1 nm-dispatcher: req:1 'dhcp4-change' [eth0]: start running ordered scripts...
+```
+---
+
 ### Q11.
 **When debugging a Bash script, what command would you use to stop the execution of the program until the Enter key is pressed?**
 ### *Answer:*
 ```
 read
+```
+---
+
+### Q12.
+**How to get the first line from a file using just the terminal?**
+### *Answer:*
+```Bash
+# head -1 /var/log/boot.log-20190716
+[  OK  ] Started Show Plymouth Boot Screen.
 ```
 ---
