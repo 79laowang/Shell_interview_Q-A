@@ -10,8 +10,8 @@ The purpose of this documentation is to document common interview questions and 
 * [Q4: How do you create a shortcut in Linux?](#Q4)
 * [Q5: What are the various stages of a Linux process it passes through?](#Q5)
 * [Q6: How to pass an argument to a script?](#Q6)
-* [Q7: What are the different types of variables used in Shell Script?](#Q7)
-* [Q8: What are the different types of variables used in Shell Script?](#Q8)
+* [Q7: How to calculate the number of passed arguments?](#Q7)
+* [Q8: How to get script name inside a script?](#Q8)
 * [Q9: What are the different types of variables used in Shell Script?](#Q9)
 * [Q10: What are the different types of variables used in Shell Script?](#Q10)
 * [Q11: When debugging a Bash script, what command would you use to stop the execution of the program until the Enter key is pressed?](#Q11)
@@ -80,6 +80,30 @@ echo ${1}
 p1
 ```
 
+### Q7.
+**How to calculate the number of passed arguments?**
+### *Answer:*
+```Bash
+# cat test.sh
+#!/usr/bin/env bash
+echo "Number of Parameters passed:$#"
+
+# ./test.sh p1 p2 p3 p4
+Number of Parameters passed:4
+```
+---
+
+### Q8.
+**How to get script name inside a script?**
+### *Answer:*
+```Bash
+# cat test.sh
+#!/usr/bin/env bash
+echo "Script Name:$0"
+
+# ./test.sh
+Script Name:./test.sh
+```
 ---
 
 ### Q11.
