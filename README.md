@@ -8,7 +8,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q2: What is a Shell Script? Can you name some of its advantages?](#Q2)
 * [Q3: What are the different types of variables used in Shell Script?](#Q3)
 * [Q4: How do you create a shortcut in Linux?](#Q4)
-* [Q5: What are the different types of variables used in Shell Script?](#Q5)
+* [Q5: What are the various stages of a Linux process it passes through?](#Q5)
 * [Q6: What are the different types of variables used in Shell Script?](#Q6)
 * [Q7: What are the different types of variables used in Shell Script?](#Q7)
 * [Q8: What are the different types of variables used in Shell Script?](#Q8)
@@ -53,6 +53,18 @@ The purpose of this documentation is to document common interview questions and 
 
   +  **Hard Link: Hard links are linked to the inode of the file and have to be on the same file system as of the file. Deleting the original file does not affect the hard link.**
   +  **Soft Link: Soft links are linked to the file name and can reside on a different file system as well. Deleting the original file makes the soft link inactive.**
+
+---
+
+### Q5.
+**What are the various stages of a Linux process it passes through?**
+### *Answer:*
+**A Linux process generally passes through four stages:**
+
+  +  **Waiting: The Linux process waits for the resource.**
+  +  **Running: The Linux process is currently being executed.**
+  +  **Stopped: The Linux process is stopped after successful execution.**
+  +  **Zombie: The process has stopped but is still active in the process table.**
 
 ---
 
