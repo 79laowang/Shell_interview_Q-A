@@ -9,7 +9,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q3: What are the different types of variables used in Shell Script?](#Q3)
 * [Q4: How do you create a shortcut in Linux?](#Q4)
 * [Q5: What are the various stages of a Linux process it passes through?](#Q5)
-* [Q6: What are the different types of variables used in Shell Script?](#Q6)
+* [Q6: How to pass an argument to a script?](#Q6)
 * [Q7: What are the different types of variables used in Shell Script?](#Q7)
 * [Q8: What are the different types of variables used in Shell Script?](#Q8)
 * [Q9: What are the different types of variables used in Shell Script?](#Q9)
@@ -65,6 +65,20 @@ The purpose of this documentation is to document common interview questions and 
   +  **Running: The Linux process is currently being executed.**
   +  **Stopped: The Linux process is stopped after successful execution.**
   +  **Zombie: The process has stopped but is still active in the process table.**
+
+---
+
+### Q6.
+**How to pass an argument to a script?**
+### *Answer:*
+```Bash
+# cat test.sh
+#!/usr/bin/env bash
+echo ${1}
+
+# bash test.sh p1
+p1
+```
 
 ---
 
