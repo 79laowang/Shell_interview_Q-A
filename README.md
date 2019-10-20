@@ -22,6 +22,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q16: What is the difference between $* and $@?](#Q16)
 * [Q17: Write down the Syntax for all the loops in Shell Scripting.](#Q17)
 * [Q18: When should shell programming/scripting not be used?](#Q18)
+* [Q19: What are the default permissions of a file when it is created?](#Q19)
 
 ---
 
@@ -233,8 +234,24 @@ done
 ### *Answer:*
 It is not advisable to use Shell scripting in the following cases;
 
-    +  **When the task is very much complex, e.g. writing the entire payroll processing system.**
-    +  **Where there is a high degree of productivity required.**
-    +  **When it needs or involves different software tools.**
+  +  **When the task is very much complex, e.g. writing the entire payroll processing system.**
+  +  **Where there is a high degree of productivity required.**
+  +  **When it needs or involves different software tools.**
+---
+
+### Q19.
+**What are the default permissions of a file when it is created?**
+### *Answer:*
+On Linux and other Unix-like operating systems, new files are created with a default set of permissions. The umask or user mask command is used to determine the default permissions for newly created files. It is a 4-digit Octal number which is set and expressed using symbolic values. The default permission of a file when it is created is **664** i.e. **rw-rw-r-**. The table for file permissions is given below;
+| 0    | 0      | No permissions         |
+| :--- | :----: | ----:                  |
+| 1    | 1      | execute                |
+| 2    | 2      | write                  |
+| 3    | 1+2    | execute + write        |
+| 4    | 4      | read                   |
+| 5    | 1+4    | execute + read         |
+| 6    | 2+4    | write + read           |
+| 7    | 1+2+4  | execute + write + read |
+
 ---
 
