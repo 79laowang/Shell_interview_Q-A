@@ -17,6 +17,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q11: When debugging a Bash script, what command would you use to stop the execution of the program until the Enter key is pressed?](#Q11)
 * [Q12: How to get the first line from a file using just the terminal?](#Q12)
 * [Q13: How to get the first line from a file using just the terminal?](#Q13)
+* [Q14: How to redirect both standard output and standard error to the same location?](#Q14)
 
 ---
 
@@ -170,5 +171,15 @@ awk '{print $3}' ${1}
 col13
 col23
 col33
+```
+---
+
+### Q14.
+**How to redirect both standard output and standard error to the same location?**
+### *Answer:*
+The two methods to redirect standard output and standard error to the same location are the following;
+```Bash
+    2>&1(# ls /usr/share/doc > out.txt 2>&1 )
+    &>(# ls /usr/share/doc &> out.txt )
 ```
 ---
