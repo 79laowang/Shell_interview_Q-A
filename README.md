@@ -195,7 +195,7 @@ The two methods to redirect standard output and standard error to the same locat
 
 ### Q16.
 **What is the difference between $* and $@?**
-### *Answer:*
-    '$@' treats each quoted arguments as separate arguments but '$*' will consider the entire set of positional parameters as a single string.
+### *Answer:* 
+xxxx $@xxxx treats each quoted arguments as separate arguments but '$*' will consider the entire set of positional parameters as a single string.
 ---
 
