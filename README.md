@@ -243,24 +243,16 @@ It is not advisable to use Shell scripting in the following cases;
 **What are the default permissions of a file when it is created?**
 ### *Answer:*
 On Linux and other Unix-like operating systems, new files are created with a default set of permissions. The umask or user mask command is used to determine the default permissions for newly created files. It is a 4-digit Octal number which is set and expressed using symbolic values. The default permission of a file when it is created is **664** i.e. **rw-rw-r-**. The table for file permissions is given below;
-| 0    | 0      | No permissions         |
-| :--- | :----: | ----:                  |
-| 1    | 1      | execute                |
-| 2    | 2      | write                  |
-| 3    | 1+2    | execute + write        |
-| 4    | 4      | read                   |
-| 5    | 1+4    | execute + read         |
-| 6    | 2+4    | write + read           |
-| 7    | 1+2+4  | execute + write + read |
 
 |  0    |   0   |No permissions       |
 | ---- | ---- | ---- |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
-|      |      |      |
+| 1     | 1      | execute      |
+| 2     | 2     | write     |
+| 3     | 1+2     | execute + write     |
+| 4     | 4     | read     |
+| 5     | 1+4    | execute + read     |
+| 6     | 2+4     | write + read      |
+| 7     | 1+2+4     | execute + write + read     |
+
 ---
 
