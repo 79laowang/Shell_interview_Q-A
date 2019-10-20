@@ -18,7 +18,8 @@ The purpose of this documentation is to document common interview questions and 
 * [Q12: How to get the first line from a file using just the terminal?](#Q12)
 * [Q13: How to get the first line from a file using just the terminal?](#Q13)
 * [Q14: How to redirect both standard output and standard error to the same location?](#Q14)
-* [Q15: What differentiate between ‘ and ” quotes?](#Q15)
+* [Q15: What is difference between ‘ and ” quotes?](#Q15)
+* [Q16: What is the difference between $* and $@?](#Q16)
 .
 
 ---
@@ -191,4 +192,10 @@ The two methods to redirect standard output and standard error to the same locat
 ### *Answer:*
   +  **Single Quotes: Used in case evaluation of variables to values is undesired.**
   +  **Double Quotes: Used in case evaluation of variables to values is required.**
+---
+
+### Q16.
+**What is the difference between $* and $@?**
+### *Answer:*
+$@ treats each quoted arguments as separate arguments but $* will consider the entire set of positional parameters as a single string.
 ---
