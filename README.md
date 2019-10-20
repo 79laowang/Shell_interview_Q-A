@@ -189,6 +189,6 @@ The two methods to redirect standard output and standard error to the same locat
 ### Q15.
 **What differentiate between ‘ and ” quotes?**
 ### *Answer:*
-  +**Single Quotes: Used in case evaluation of variables to values is undesired.**
-  +**Double Quotes: Used in case evaluation of variables to values is required.**
-  ---
+  +  **Single Quotes: Used in case evaluation of variables to values is undesired.**
+  +  **Double Quotes: Used in case evaluation of variables to values is required.**
+---
