@@ -193,7 +193,6 @@ The two methods to redirect standard output and standard error to the same locat
   +  **Double Quotes: Used in case evaluation of variables to values is required.**
 ---
 
----
 ### Q16.
 **What is the difference between $* and $@?**
 ### *Answer:*
