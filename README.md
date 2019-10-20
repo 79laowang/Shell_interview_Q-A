@@ -253,5 +253,14 @@ On Linux and other Unix-like operating systems, new files are created with a def
 | 6    | 2+4    | write + read           |
 | 7    | 1+2+4  | execute + write + read |
 
+|  0    |   0   |No permissions       |
+| ---- | ---- | ---- |
+|      |      |      |
+|      |      |      |
+|      |      |      |
+|      |      |      |
+|      |      |      |
+|      |      |      |
+|      |      |      |
 ---
 
