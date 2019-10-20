@@ -18,6 +18,8 @@ The purpose of this documentation is to document common interview questions and 
 * [Q12: How to get the first line from a file using just the terminal?](#Q12)
 * [Q13: How to get the first line from a file using just the terminal?](#Q13)
 * [Q14: How to redirect both standard output and standard error to the same location?](#Q14)
+* [Q15: What differentiate between ‘ and ” quotes?](#Q15)
+.
 
 ---
 
@@ -183,3 +185,10 @@ The two methods to redirect standard output and standard error to the same locat
     &>(# ls /usr/share/doc &> out.txt )
 ```
 ---
+
+### Q15.
+**What differentiate between ‘ and ” quotes?**
+### *Answer:*
+  +**Single Quotes: Used in case evaluation of variables to values is undesired.**
+  +**Double Quotes: Used in case evaluation of variables to values is required.**
+  ---
