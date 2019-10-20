@@ -20,6 +20,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q14: How to redirect both standard output and standard error to the same location?](#Q14)
 * [Q15: What is difference between ‘ and ” quotes?](#Q15)
 * [Q16: What is the difference between $* and $@?](#Q16)
+* [Q17: Write down the Syntax for all the loops in Shell Scripting.](#Q17)
 
 ---
 
@@ -198,5 +199,31 @@ The two methods to redirect standard output and standard error to the same locat
 ### *Answer:*
 $@ treats each quoted arguments as separate arguments but $* will consider the entire set of positional parameters as a single string
 
+---
+
+### Q17.
+**Write down the Syntax for all the loops in Shell Scripting.**
+### *Answer:*
+For Loop:
+```Bash
+for var in word1 word2 ... wordN
+do
+   Statement(s) to be executed for every word.
+done
+```
+While Loop:
+```Bash
+while command
+do
+   Statement(s) to be executed if command is true
+done
+```
+Until Loop:
+```Bash
+until command
+do
+   Statement(s) to be executed until command is true
+done
+```
 ---
 
