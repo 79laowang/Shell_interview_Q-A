@@ -21,6 +21,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q15: What is difference between ‘ and ” quotes?](#Q15)
 * [Q16: What is the difference between $* and $@?](#Q16)
 * [Q17: Write down the Syntax for all the loops in Shell Scripting.](#Q17)
+* [Q18: When should shell programming/scripting not be used?](#Q18)
 
 ---
 
@@ -225,5 +226,15 @@ do
    Statement(s) to be executed until command is true
 done
 ```
+---
+
+### Q18.
+**When should shell programming/scripting not be used?**
+### *Answer:*
+It is not advisable to use Shell scripting in the following cases;
+
+    +  **When the task is very much complex, e.g. writing the entire payroll processing system.**
+    +  **Where there is a high degree of productivity required.**
+    +  **When it needs or involves different software tools.**
 ---
 
