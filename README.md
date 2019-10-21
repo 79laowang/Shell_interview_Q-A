@@ -24,6 +24,9 @@ The purpose of this documentation is to document common interview questions and 
 * [Q18: When should shell programming/scripting not be used?](#Q18)
 * [Q19: What are the default permissions of a file when it is created?](#Q19)
 * [Q20: Determine the output of the following command:](#Q20)
+* [Q21: Determine the output of the following command:](#Q21)
+* [Q22: Determine the output of the following command:](#Q22)
+* [Q23: How booleans are used in a shell script?](#Q23)
 
 ---
 
@@ -259,10 +262,60 @@ On Linux and other Unix-like operating systems, new files are created with a def
 
 ### Q20.
 **Determine the output of the following command:
-$ name=Bob && echo ‘My name is $name’.**
+$ name=Bob && echo 'My name is ${name}'**
 ### *Answer:*
 ```Bash
 $ name=Bob && echo 'My name is ${name}'
 My name is ${name}
+```
+---
+
+### Q21.
+**Determine the output of the following command:
+$ [ -z "" ] && echo true || echo false**
+### *Answer:*
+```Bash
+$ [ -z "" ] && echo true || echo false
+true
+```
+---
+
+### Q22.
+**Determine the output of the following command:
+$ echo ${new:-variable}**
+### *Answer:*
+```Bash
+$ echo ${new:-variable}
+variable
+```
+---
+
+### Q23.
+**How booleans are used in a shell script?**
+### *Answer:*
+In bash, true is 0 and false is any value but 0. There exist two commands, true and false that deliver true or false, respectively:
+```Bash
+$ true; echo $?
+0
+
+$ false; echo $?
+1
+```
+```Bash
+#!/usr/bin/env bash
+#bool.sh
+bool=true
+if ($bool);then
+    echo true
+fi
+bool=false
+if !($bool);then
+    echo false
+fi
+
+$ ./bool.sh
+true
+false
+
 ```
 ---
