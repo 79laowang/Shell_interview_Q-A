@@ -23,6 +23,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q17: Write down the Syntax for all the loops in Shell Scripting.](#Q17)
 * [Q18: When should shell programming/scripting not be used?](#Q18)
 * [Q19: What are the default permissions of a file when it is created?](#Q19)
+* [Q20: Determine the output of the following command:](#Q20)
 
 ---
 
@@ -256,3 +257,12 @@ On Linux and other Unix-like operating systems, new files are created with a def
 
 ---
 
+### Q20.
+**Determine the output of the following command:
+$ name=Bob && echo ‘My name is $name’.**
+### *Answer:*
+```Bash
+$ name=Bob && echo 'My name is ${name}'
+My name is ${name}
+```
+---
