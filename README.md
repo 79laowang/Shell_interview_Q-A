@@ -27,6 +27,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q21: Determine the output of the following command:](#Q21)
 * [Q22: Determine the output of the following command:](#Q22)
 * [Q23: How booleans are used in a shell script?](#Q23)
+* [Q24: How to get part of string variable with echo command only?](#Q24)
 
 ---
 
@@ -317,5 +318,27 @@ $ ./bool.sh
 true
 false
 
+```
+---
+
+### Q24.
+**How to get part of string variable with echo command only?**
+### *Answer:*
+To extract substrings in a shell script is to use a Bash variable with the substring syntax, just likes python slice.
+```Bash
+#!/usr/bin/env bash
+#echo ${var:x:y}
+#x - start position
+#y - length
+
+var="My name is Bob, and I work at Oracle."
+#From left extract string
+echo ${var:11:3} # will display Bob
+echo ${var::2} # will display My
+echo ${var:19} # will display I work at Oracle.
+
+#From right extract string 
+echo ${var:0-7:6} # will display Oracle
+echo ${var:0-7} # will display Oracle.
 ```
 ---
