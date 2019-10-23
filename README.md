@@ -28,6 +28,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q22: Determine the output of the following command:](#Q22)
 * [Q23: How booleans are used in a shell script?](#Q23)
 * [Q24: How to get part of string variable with echo command only?](#Q24)
+* [Q25: How to print all the arguments provided to the script?](#Q25)
 
 ---
 
@@ -340,5 +341,22 @@ echo ${var:19} # will display I work at Oracle.
 #From right extract string 
 echo ${var:0-7:6} # will display Oracle
 echo ${var:0-7} # will display Oracle.
+```
+---
+
+### Q25.
+**How to print all the arguments provided to the script?**
+### *Answer:*
+```Bash
+#!/usr/bin/env bash
+for i;do echo $i ;done
+
+# ./test.sh a b c d e f
+a
+b
+c
+d
+e
+f
 ```
 ---
