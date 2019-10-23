@@ -30,6 +30,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q24: How to get part of string variable with echo command only?](#Q24)
 * [Q25: How to print all the arguments provided to the script?](#Q25)
 * [Q26: How to print PID of the current shell?](#Q26)
+* [Q27: How to print all array elements and their respective indexes?](#Q27)
 
 ---
 
@@ -373,5 +374,20 @@ done
 
 # ./test.sh
 3950
+```
+---
+
+### Q27.
+**How to print all array elements and their respective indexes?**
+### *Answer:*
+```Bash
+#!/usr/bin/env bash
+array=("This" "is" "a" "test")
+echo "Array elements:${array[@]}"
+echo "Array element index:${!array[@]}"
+
+# ./test.sh
+Array elements:This is a test
+Array element index:0 1 2 3
 ```
 ---
