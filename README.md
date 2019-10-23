@@ -29,6 +29,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q23: How booleans are used in a shell script?](#Q23)
 * [Q24: How to get part of string variable with echo command only?](#Q24)
 * [Q25: How to print all the arguments provided to the script?](#Q25)
+* [Q26: How to print PID of the current shell?](#Q26)
 
 ---
 
@@ -358,5 +359,19 @@ c
 d
 e
 f
+```
+---
+
+### Q26.
+**How to print PID of the current shell?**
+### *Answer:*
+```Bash
+#!/usr/bin/env bash
+for PID in $$; do
+    echo ${PID}
+done
+
+# ./test.sh
+3950
 ```
 ---
