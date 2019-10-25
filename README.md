@@ -31,6 +31,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q25: How to print all the arguments provided to the script?](#Q25)
 * [Q26: How to print PID of the current shell?](#Q26)
 * [Q27: How to print all array elements and their respective indexes?](#Q27)
+* [Q28: How to print the first array element?](#Q28)
 
 ---
 
@@ -391,3 +392,19 @@ Array elements:This is a test
 Array element index:0 1 2 3
 ```
 ---
+
+### Q28.
+**How to print the first array element?**
+### *Answer:*
+```Bash
+#!/usr/bin/env bash    
+array=("This" "is" "Shell" "Scripting" )    
+echo "First element:${array[0]}"    
+echo "All elements:${array[@]}"
+
+$ ./test.sh
+First element:This
+All elements:This is Shell Scripting
+```
+---
+
