@@ -33,6 +33,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q27: How to print all array elements and their respective indexes?](#Q27)
 * [Q28: How to print the first array element?](#Q28)
 * [Q29: How many fields are present in a crontab file and what does each field specify?](#Q29)
+* [Q30: How to debug the problems encountered in the shell script/program?](#Q30)
 
 ---
 
@@ -423,5 +424,14 @@ The first five fields contain information on when to execute the command and the
   
 The sixth field contains the command to be executed.
 
+---
+
+### Q30.
+**How to debug the problems encountered in the shell script/program?**
+### *Answer:*
+Given below are some common methods used to debug the problems in the script.
+
+  +  Debug statements can be inserted in the shell script to output/display the information which helps to identify the problem.
+  +  Using set -x we can enable debugging in the script.
 ---
 
