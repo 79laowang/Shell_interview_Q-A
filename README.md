@@ -34,6 +34,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q28: How to print the first array element?](#Q28)
 * [Q29: How many fields are present in a crontab file and what does each field specify?](#Q29)
 * [Q30: How to debug the problems encountered in the shell script/program?](#Q30)
+* [Q31: How to declare a readlone variable?](#Q31)
 
 ---
 
@@ -435,3 +436,12 @@ Given below are some common methods used to debug the problems in the script.
   +  Using set -x we can enable debugging in the script.
 ---
 
+### Q31.
+**How to declare a readlone variable?**
+### *Answer:*
+```Bash
+#!/usr/bin/env bash    
+declare -r var1=1
+echo "var1 = $var1"   # var1 = 1
+(( var1++ ))          # x.sh: line 4: var1: readonly variable
+```
