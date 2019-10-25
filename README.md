@@ -420,6 +420,7 @@ The first five fields contain information on when to execute the command and the
   +  day(1-31)
   +  month(1-12)
   +  day of the week(0-6, Sunday = 0).
+  
 The sixth field contains the command to be executed.
 
 ---
