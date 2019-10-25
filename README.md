@@ -32,6 +32,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q26: How to print PID of the current shell?](#Q26)
 * [Q27: How to print all array elements and their respective indexes?](#Q27)
 * [Q28: How to print the first array element?](#Q28)
+* [Q29: How many fields are present in a crontab file and what does each field specify?](#Q29)
 
 ---
 
@@ -406,5 +407,20 @@ $ ./test.sh
 First element:This
 All elements:This is Shell Scripting
 ```
+---
+
+### Q29.
+**How many fields are present in a crontab file and what does each field specify?**
+### *Answer:*
+The crontab file has six fields.
+
+The first five fields contain information on when to execute the command and they are as follows;
+
+    ++  minute(0-59)
+    ++  hour(0-23)
+    ++  day(1-31)
+    ++ month(1-12)
+    ++ day of the week(0-6, Sunday = 0).
+The sixth field contains the command to be executed.
 ---
 
