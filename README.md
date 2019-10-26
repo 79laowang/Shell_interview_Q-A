@@ -40,6 +40,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q34: How to open a read-only file in the Shell?](#Q34)
 * [Q35: Write a shell script to get current date, time, user name, file name and working directory?](#Q35)
 * [Q36: How to find all the files modified in less than 7 days?](#Q36)
+* [Q37: Print a given number, in reverse order using a Shell script such that the input is provided using command Line Argument only.](#Q37)
 
 ---
 
@@ -505,4 +506,39 @@ Current directory is /home/ke
 ```Bash
 $ find . -type f -mtime -7 -exec ls -l {} \;
 ```
+---
+
+### Q37.
+**Print a given number, in reverse order using a Shell script such that the input is provided using command Line Argument only.**
+### *Answer:*
+```Bash
+#!/usr/bin/env bash
+Usage(){
+    echo "Usage: $0 number"
+    echo " Reverse of the given number will be printed"
+    echo " For eg. $0 0123, 3210 will be printed"
+    exit 1
+}
+
+[ $# -ne 1  ] && Usage
+
+n=$1
+rev=0
+sd=0
+
+while [ $n -gt 0  ]
+do
+    sd=$(( n % 10 ))
+    rev=$(( rev * 10 + sd ))
+    n=$(( n / 10 ))
+done
+echo "Reverse results:$rev"
+
+[ke@ke-linux ~]$ ./test.sh 12345
+Reverse results:54321
+
+[ke@ke-linux ~]$ ./test.sh 123456789
+Reverse results:987654321
+```
+
 ---
