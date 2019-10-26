@@ -481,7 +481,6 @@ A read-only file can be opened using the below command:
 ### Q35.
 **Write a shell script to get current date, time, user name, file name and working directory.**
 ### *Answer:*
-A read-only file can be opened using the below command:
 ```Bash
 #!/usr/bin/env bash
 echo "Hello, $LOGNAME"
