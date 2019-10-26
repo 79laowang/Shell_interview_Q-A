@@ -569,7 +569,7 @@ $  echo "scale=2;sqrt(2.56)" | bc
 **How to get the value of pi till a 20 decimal places?**
 ### *Answer:*
 ```Bash
-$ echo "scale=20; 4*a(1)" | bc -l
-3.14159265358979323844
+$ echo -n "π=";echo "scale=20; 4*a(1)" | bc -l
+π=3.14159265358979323844
 ```
 ---
