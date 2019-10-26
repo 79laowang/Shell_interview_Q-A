@@ -42,6 +42,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q36: How to find all the files modified in less than 7 days?](#Q36)
 * [Q37: Print a given number, in reverse order using a Shell script such that the input is provided using command Line Argument only.](#Q37)
 * [Q38: How to calculate a real number calculation in shell script?](#Q38)
+* [Q39: How to get the value of pi till a 20 decimal places?](#Q39)
 
 ---
 
@@ -564,3 +565,11 @@ $  echo "scale=2;sqrt(2.56)" | bc
 ```
 ---
 
+### Q39.
+**How to get the value of pi till a 20 decimal places?**
+### *Answer:*
+```Bash
+$ echo "scale=20; 4*a(1)" | bc -l
+3.14159265358979323844
+```
+---
