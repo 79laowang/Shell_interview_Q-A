@@ -36,6 +36,8 @@ The purpose of this documentation is to document common interview questions and 
 * [Q30: How to debug the problems encountered in the shell script/program?](#Q30)
 * [Q31: How to declare a readlone variable?](#Q31)
 * [Q32: What are the different commands available to check the disk usage?](#Q32)
+* [Q33: What is the commands to check a directory space usage?](#Q33)
+* [Q34: How to open a read-only file in the Shell?](#Q34)
 
 ---
 
@@ -456,3 +458,21 @@ There are three different commands available to check the disk usage.
   +  **du: It is used to check the directory wise disk usage.**
   +  **dfspace: It is used to check the free disk space in terms of MB.**
  ---
+
+### Q33.
+**What is the commands to check a directory space usage?**
+### *Answer:*
+```Bash
+[ke@ke-linux ~]$ du -s ~ -m
+1501    /home/ke
+```
+---
+
+### Q34.
+**How to open a read-only file in the Shell?**
+### *Answer:*
+A read-only file can be opened using the below command:
+```diff
+#vi –R <File Name> 
+```
+---
