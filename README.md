@@ -472,8 +472,17 @@ There are three different commands available to check the disk usage.
 **How to open a read-only file in the Shell?**
 ### *Answer:*
 A read-only file can be opened using the below command:
+## COLOR!
 
-<font color="#dd0000">浅红色文字：</font>
+- ![#ff0000](https://placehold.it/12/ff0000?text=+) red!
+- ![#9900c5](https://placehold.it/15/9900c5?text=+) purple!
+- ![#157500](https://placehold.it/20/157500?text=+) green!
+
+![](https://placehold.it/400x90/ff0000/000000?text=IMPORTANT!)
+
+![](https://placehold.it/400x90/ff6600/000?text=WARNING!)
+
+![](https://placehold.it/350x90/009955/fff?text=SUCCESS!)
 
 
 ```diff
