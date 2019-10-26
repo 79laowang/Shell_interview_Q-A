@@ -38,6 +38,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q32: What are the different commands available to check the disk usage?](#Q32)
 * [Q33: What is the commands to check a directory space usage?](#Q33)
 * [Q34: How to open a read-only file in the Shell?](#Q34)
+* [Q35: Write a shell script to get current date, time, user name, file name and working directory?](#Q35)
 
 ---
 
@@ -474,5 +475,26 @@ There are three different commands available to check the disk usage.
 A read-only file can be opened using the below command:
 ```diff
 #vi –R <File Name> 
+```
+---
+
+### Q35.
+**Write a shell script to get current date, time, user name, file name and working directory.**
+### *Answer:*
+A read-only file can be opened using the below command:
+```Bash
+#!/usr/bin/env bash
+echo "Hello, $LOGNAME"
+echo "Today's date is `date`"
+echo "Username is `who i am`"
+echo "Current file name is $0"
+echo "Current directory is `pwd`"
+
+$ ./test.sh
+Hello, ke
+Today's date is 2019年 10月 26日 星期六 19:46:46 CST
+Username is ke       pts/0        2019-10-26 19:41 (10.0.2.2)
+Current file name is ./test.sh
+Current directory is /home/ke
 ```
 ---
