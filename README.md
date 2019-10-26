@@ -39,6 +39,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q33: What is the commands to check a directory space usage?](#Q33)
 * [Q34: How to open a read-only file in the Shell?](#Q34)
 * [Q35: Write a shell script to get current date, time, user name, file name and working directory?](#Q35)
+* [Q36: How to find all the files modified in less than 7 days?](#Q36)
 
 ---
 
@@ -495,5 +496,13 @@ Today's date is 2019年 10月 26日 星期六 19:46:46 CST
 Username is ke       pts/0        2019-10-26 19:41 (10.0.2.2)
 Current file name is ./test.sh
 Current directory is /home/ke
+```
+---
+
+### Q36.
+**How to find all the files modified in less than 7 days?**
+### *Answer:*
+```Bash
+$ find . -type f -mtime -7 -exec ls -l {} \;
 ```
 ---
