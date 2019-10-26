@@ -472,9 +472,9 @@ There are three different commands available to check the disk usage.
 **How to open a read-only file in the Shell?**
 ### *Answer:*
 A read-only file can be opened using the below command:
-```css
+
 <font color="#dd0000">浅红色文字：</font>
-```
+
 
 ```diff
 #vi –R <File Name> 
