@@ -41,6 +41,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q35: Write a shell script to get current date, time, user name, file name and working directory?](#Q35)
 * [Q36: How to find all the files modified in less than 7 days?](#Q36)
 * [Q37: Print a given number, in reverse order using a Shell script such that the input is provided using command Line Argument only.](#Q37)
+* [Q38: How to calculate a real number calculation in shell script?](#Q38)
 
 ---
 
@@ -540,5 +541,26 @@ Reverse results:54321
 [ke@ke-linux ~]$ ./test.sh 123456789
 Reverse results:987654321
 ```
-
 ---
+
+### Q38.
+**How to calculate a real number calculation in shell script?**
+### *Answer:*
+```Bash
+$  echo "1.6+2.5" | bc
+4.1
+
+$  echo "1.6*2.5" | bc
+4.0
+
+$ echo "scale=3;3/2" | bc
+1.500
+
+$  echo "scale=2;1.6^2" | bc
+2.56
+
+$  echo "scale=2;sqrt(2.56)" | bc
+1.60
+```
+---
+
