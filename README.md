@@ -35,6 +35,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q29: How many fields are present in a crontab file and what does each field specify?](#Q29)
 * [Q30: How to debug the problems encountered in the shell script/program?](#Q30)
 * [Q31: How to declare a readlone variable?](#Q31)
+* [Q32: What are the different commands available to check the disk usage?](#Q32)
 
 ---
 
@@ -445,3 +446,13 @@ declare -r var1=1
 echo "var1 = $var1"   # var1 = 1
 (( var1++ ))          # x.sh: line 4: var1: readonly variable
 ```
+---
+
+### Q32.
+**How to declare a readlone variable?**
+### *Answer:*
+There are three different commands available to check the disk usage.
+  +  **df: It is used to check the free disk space.**
+  +  **du: It is used to check the directory wise disk usage.**
+  +  **dfspace: It is used to check the free disk space in terms of MB.**
+ ---
