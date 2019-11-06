@@ -43,6 +43,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q37: Print a given number, in reverse order using a Shell script such that the input is provided using command Line Argument only.](#Q37)
 * [Q38: How to calculate a real number calculation in shell script?](#Q38)
 * [Q39: How to get the value of pi till a 20 decimal places?](#Q39)
+* [Q40: Write a script to print the first 10 elements of Fibonacci series.](#Q40)
 
 ---
 
@@ -571,5 +572,25 @@ $  echo "scale=2;sqrt(2.56)" | bc
 ```Bash
 $ echo -n "π=";echo "scale=20; 4*a(1)" | bc -l
 π=3.14159265358979323844
+```
+---
+
+### Q40.
+**Write a script to print the first 10 elements of Fibonacci series.**
+### *Answer:*
+```Bash
+#!/usr/bin/env bash
+for i in {1..10}; do
+	if [[ ${i} -eq 1 || ${i} -eq 2 ]]; then
+		a=1
+		b=1
+		echo 1
+	else
+		c=$b
+        b=$((a + b))
+		a=$c
+		echo $b
+	fi
+done
 ```
 ---
