@@ -581,16 +581,29 @@ $ echo -n "π=";echo "scale=20; 4*a(1)" | bc -l
 ```Bash
 #!/usr/bin/env bash
 for i in {1..10}; do
-	if [[ ${i} -eq 1 || ${i} -eq 2 ]]; then
-		a=1
-		b=1
-		echo 1
-	else
-		c=$b
+    if [[ ${i} -eq 1 || ${i} -eq 2 ]]; then
+	a=1
+	b=1
+	echo 1
+    else
+	c=$b
         b=$((a + b))
-		a=$c
-		echo $b
-	fi
+	a=$c
+	echo $b
+    fi
 done
+
+$ ./test.sh 
+1
+1
+2
+3
+5
+8
+13
+21
+34
+55
+
 ```
 ---
