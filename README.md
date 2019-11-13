@@ -45,6 +45,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q39: How to get the value of pi till a 20 decimal places?](#Q39)
 * [Q40: Write a script to print the first 10 elements of Fibonacci series.](#Q40)
 * [Q41: What is the difference between $$ and $!?](#Q41)
+* [Q42: What are zombie processes?](#Q42)
 
 ---
 
@@ -615,3 +616,10 @@ $ ./test.sh
 $$ gives the process id of the currently executing process whereas $! Shows the process id of the process that recently went into the background.
 
 --- 
+
+### Q42.
+**What are zombie processes?**
+### *Answer:*
+These are the processes which have died but whose exit status is still not picked by the parent process. These processes even if not functional still have its process id entry in the process table. 
+
+---
