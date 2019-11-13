@@ -47,6 +47,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q41: What is the difference between $$ and $!?](#Q41)
 * [Q42: What are zombie processes?](#Q42)  
 * [Q43: Print the 10th line without using tail and head command.](#Q43)
+* [Q44: How will you find the total disk space used by a specific user?](#Q44)
 
 
 ---
@@ -632,5 +633,14 @@ These are the processes which have died but whose exit status is still not picke
 ```Bash
 #!/usr/bin/env bash
 sed –n '10p' file1
+```
+---
+
+### Q44.
+**How will you find the total disk space used by a specific user?**
+### *Answer:*
+```Bash
+#!/usr/bin/env bash
+du -s /home/<user home path>
 ```
 ---
