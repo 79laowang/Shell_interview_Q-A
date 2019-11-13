@@ -44,6 +44,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q38: How to calculate a real number calculation in shell script?](#Q38)
 * [Q39: How to get the value of pi till a 20 decimal places?](#Q39)
 * [Q40: Write a script to print the first 10 elements of Fibonacci series.](#Q40)
+* [Q41: What is the difference between $$ and $!?](#Q41)
 
 ---
 
@@ -607,3 +608,10 @@ $ ./test.sh
 
 ```
 ---
+
+### Q41.
+**What is the difference between $$ and $!?**
+### *Answer:*
+$$ gives the process id of the currently executing process whereas $! Shows the process id of the process that recently went into the background.
+
+--- 
