@@ -35,20 +35,21 @@ The purpose of this documentation is to document common interview questions and 
 * [Q29: How many fields are present in a crontab file and what does each field specify?](#Q29)
 * [Q30: How to debug the problems encountered in the shell script/program?](#Q30)
 * [Q31: How to declare a readlone variable?](#Q31)
-* [Q32: What are the different commands available to check the disk usage?](#Q32)
-* [Q33: What is the commands to check a directory space usage?](#Q33)
-* [Q34: How to open a read-only file in the Shell?](#Q34)
-* [Q35: Write a shell script to get current date, time, user name, file name and working directory?](#Q35)
-* [Q36: How to find all the files modified in less than 7 days?](#Q36)
-* [Q37: Print a given number, in reverse order using a Shell script such that the input is provided using command Line Argument only.](#Q37)
-* [Q38: How to calculate a real number calculation in shell script?](#Q38)
-* [Q39: How to get the value of pi till a 20 decimal places?](#Q39)
-* [Q40: Write a script to print the first 10 elements of Fibonacci series.](#Q40)
-* [Q41: What is the difference between $$ and $!?](#Q41)
-* [Q42: What are zombie processes?](#Q42)  
-* [Q43: Print the 10th line without using tail and head command.](#Q43)
-* [Q44: How will you find the total disk space used by a specific user?](#Q44)
-* [Q45: Find all the files modified in less than 2 days and print the record count of each.](#Q45)
+* [Q32: What are the different commands available to check the disk usage?](#Q32)  
+* [Q33: What is the commands to check a directory space usage?](#Q33)  
+* [Q34: How to open a read-only file in the Shell?](#Q34)  
+* [Q35: Write a shell script to get current date, time, user name, file name and working directory?](#Q35)  
+* [Q36: How to find all the files modified in less than 7 days?](#Q36)  
+* [Q37: Print a given number, in reverse order using a Shell script such that the input is provided using command Line Argument only.](#Q37)  
+* [Q38: How to calculate a real number calculation in shell script?](#Q38)  
+* [Q39: How to get the value of pi till a 20 decimal places?](#Q39)  
+* [Q40: Write a script to print the first 10 elements of Fibonacci series.](#Q40)  
+* [Q41: What is the difference between $$ and $!?](#Q41)  
+* [Q42: What are zombie processes?](#Q42)   
+* [Q43: Print the 10th line without using tail and head command.](#Q43)  
+* [Q44: How will you find the total disk space used by a specific user?](#Q44)  
+* [Q45: Find all the files modified in less than 2 days and print the record count of each.](#Q45)  
+* [Q46: How to send a mail with a compressed file as an attachment?](#Q46)  
 
 
 ---
@@ -650,6 +651,18 @@ du -s /home/<user home path>
 **Find all the files modified in less than 2 days and print the record count of each.**
 ### *Answer:*
 ```Bash
-# find . –mtime -2 –exec wc –l {} \; 
+$ find . –mtime -2 –exec wc –l {} \; 
+```
+---
+
+### Q46.
+**How to send a mail with a compressed file as an attachment?**
+### *Answer:*
+```Bash
+$ zip file1.zip file1 | mailx –s "subject" <Recipients email id>
+
+Email content
+
+EOF 
 ```
 ---
