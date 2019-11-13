@@ -48,6 +48,7 @@ The purpose of this documentation is to document common interview questions and 
 * [Q42: What are zombie processes?](#Q42)  
 * [Q43: Print the 10th line without using tail and head command.](#Q43)
 * [Q44: How will you find the total disk space used by a specific user?](#Q44)
+* [Q45: Find all the files modified in less than 2 days and print the record count of each.](#Q45)
 
 
 ---
@@ -642,5 +643,13 @@ sed –n '10p' file1
 ```Bash
 #!/usr/bin/env bash
 du -s /home/<user home path>
+```
+---
+
+### Q45.
+**Find all the files modified in less than 2 days and print the record count of each.**
+### *Answer:*
+```Bash
+# find . –mtime -2 –exec wc –l {} \; 
 ```
 ---
